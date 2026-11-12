@@ -1,0 +1,13 @@
+{
+  "name": "goexpress",
+  "version": "1.0.0",
+  "description": "Plataforma de encomiendas con cotizaciones, seguimiento GPS y puntos canjeables",
+  "main": "backend/server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning backend/server.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning backend/scripts/create-admin.js",
+    "test": "node --disable-warning=ExperimentalWarning backend/test/smoke.js"
+  },
+  "license": "UNLICENSED"
+}
