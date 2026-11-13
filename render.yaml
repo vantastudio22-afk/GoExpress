@@ -17,7 +17,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: GEO_USER_AGENT
-        value: GoExpress/1.0 (contacto: lucas1990sanchez@gmail.com)
+        value: GoExpress/1.0 (contacto:lucas1990sanchez@gmail.com)
       - key: ADMIN_NAME
         sync: false
       - key: ADMIN_EMAIL
