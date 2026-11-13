@@ -1,0 +1,26 @@
+# Publicación gratuita en Render (https://render.com): "New + → Blueprint" y elegí este repositorio.
+services:
+  - type: web
+    name: goexpress
+    runtime: node
+    plan: free
+    buildCommand: echo "sin dependencias que instalar"
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEO_USER_AGENT
+        value: GoExpress/1.0 (contacto: CAMBIAR-por-tu-email@dominio.com)
+      - key: ADMIN_NAME
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
